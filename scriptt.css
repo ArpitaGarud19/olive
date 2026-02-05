@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(#cfd8b6, #a3b18a);
+}
+
+#loginScreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginScreen input, select {
+  padding: 12px;
+  margin: 8px;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+}
+
+#loginScreen button {
+  background: #344e41;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+}
+
+header {
+  background: #344e41;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar {
+  background: #588157;
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.toolbar button {
+  background: #3a5a40;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+#map {
+  height: 60vh;
+}
+
+#log {
+  background: #dad7cd;
+  padding: 10px;
+  height: 20vh;
+  overflow-y: auto;
+}
