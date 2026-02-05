@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operation Olive</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css">
+
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginScreen">
+  <h1>🪖 OPERATION OLIVE</h1>
+  <input type="password" id="code" placeholder="Access Code">
+  <select id="role">
+    <option>Commander</option>
+    <option>Scout</option>
+    <option>Observer</option>
+  </select>
+  <button onclick="login()">ENTER</button>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none;">
+  <header>
+    <span>🪖 OPERATION OLIVE</span>
+    <span id="userInfo"></span>
+  </header>
+
+  <div class="toolbar">
+    <button onclick="captureLocation()">📍 GPS</button>
+    <button onclick="addMarker('enemy')">🔴 Enemy</button>
+    <button onclick="addMarker('friendly')">🔵 Friendly</button>
+    <button onclick="addMarker('safe')">🟢 Safe</button>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="log">
+    <h3>📜 Mission Log</h3>
+    <ul id="logList"></ul>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
